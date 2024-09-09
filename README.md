@@ -35,26 +35,28 @@ This project aims to detect and segment brain tumors in MRI (Magnetic Resonance 
 
 ## Project Structure
 ```
-brain-tumor-detection/
+brain-tumor-cnn/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── data.csv          # Main dataset
+│   └── data_mask.csv     # Mask data for segmentation
+│
 ├── models/
-│   ├── classification/
-│   └── segmentation/
-├── src/
-│   ├── data_preparation/
-│   ├── model_training/
-│   ├── evaluation/
-│   └── utilities.py
+│   ├── ResUNet-MRI.json
+│   ├── ResUNet-model.json
+│   └── resnet-50-MRI.json
+│
 ├── notebooks/
-│   ├── exploratory_data_analysis.ipynb
-│   ├── model_development.ipynb
-│   └── results_analysis.ipynb
-├── requirements.txt
-├── README.md
-└── LICENSE
+│   └── test.ipynb        # Jupyter notebook for testing
+│
+├── src/
+│   └── utilities.py      # Utility functions
+│
+├── .gitignore            # Git ignore file
+├── LICENSE               # Project license
+├── README.md             # Project documentation
+│
+└── __pycache__/          # Python cache directory
 ```
 
 ## Data Preparation
