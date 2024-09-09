@@ -82,9 +82,6 @@ brain-tumor-detection/
 - Segmentation performance is assessed using Dice coefficient and Intersection over Union (IoU).
 - A comprehensive evaluation pipeline combines both models to provide end-to-end tumor detection and segmentation.
 
-## Results
-[Include a summary of your model's performance, possibly with some visualizations or metrics]
-
 ## Future Improvements
 - Implement 3D convolutions to better utilize volumetric MRI data
 - Explore ensemble methods for improved classification accuracy
